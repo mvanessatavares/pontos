@@ -4,10 +4,10 @@ import { Point } from "models/Point";
 import { prisma } from "../database/prismaClient";
 
 export class CreatePointService {
-    async execute({id, latitude, longitude, tipoLixo, name, city,  state}: PointRequest): Promise<Error | Point> {
+    async execute({latitude, longitude, tipoLixo, name, city,  state}: PointRequest): Promise<Error | Point> {
       const existPoint = await prisma.point.findUnique({
         where: {
-          id,
+          latitude,
         },
       });
   
@@ -17,10 +17,9 @@ export class CreatePointService {
   try {
     const point = await prisma.point.create({
       data: {
-        id,
+        name,
         latitude,
         longitude,
-        name,
         tipoLixo,
         city,
         state

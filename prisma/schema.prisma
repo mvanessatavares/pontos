@@ -21,9 +21,9 @@ model user {
 
 model point {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  latitude Float
+  latitude Float @unique
   longitude Float
-  name String
+  name String 
   tipoLixo String
   city String
   state String

@@ -3,14 +3,11 @@ import { sign } from "jsonwebtoken";
 import { prisma } from "../database/prismaClient";
 import { Point } from "../models/Point";
 
-export class PointService {
-    async search({ city, state }: Point) {
+export class SessionServicepoint {
+    async execute({ name }: Point) {
       const point = await prisma.point.findMany({
         where: {
-          AND: [
-            { city: { contains: city } },
-            { state: { contains: state } }
-          ]
+         name,
         },
       });
   

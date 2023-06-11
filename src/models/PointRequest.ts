@@ -1,23 +1,22 @@
-import { IsNotEmpty, IsString, MinLength} from "class-validator";
-import { IsNumber } from 'class-validator';
+import { IsLatitude, IsNotEmpty, IsString, MinLength, IsNumber} from "class-validator";
+//import { IsName } from "class-validator";
 
 export class PointRequest {
-  @IsString()
-  @IsNotEmpty()
-  id: string;
-
-  @IsNumber()
-  @MinLength(8)
-  @IsNotEmpty()
-  latitude: number;
-
-  @IsNumber()
-  @IsNotEmpty()
-  longitude: number;
 
   @IsString()
   @IsNotEmpty()
   name: string;
+
+  
+  @IsNumber()
+  @MinLength(15)
+  @IsNotEmpty()
+  latitude: number;
+
+  @IsNumber()
+  @MinLength(15)
+  @IsNotEmpty()
+  longitude: number;
 
   @IsString()
   @IsNotEmpty()

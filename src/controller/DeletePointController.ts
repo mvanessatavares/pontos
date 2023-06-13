@@ -3,11 +3,11 @@ import { DeletePointService } from "../service/DeletePointService";
 
 export class DeletePointController {
   async handle(req: Request, res: Response) {
-    const  name  = req.params.name as string;
-    console.log(name);
+    const  id  = req.params.id as string;
+    console.log(id);
 
     const deletePointService = new DeletePointService();
-    const result = await deletePointService.execute( name );
+    const result = await deletePointService.execute( id );
 
     if (result instanceof Error) {
       return res.status(400).json(result.message);

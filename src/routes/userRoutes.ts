@@ -14,9 +14,7 @@ routes.post("/points", new CreatPointController().handle );
 //todo: adicionar autenticação e user admin
 routes.delete("/points/:id" ,new DeletePointController().handle);
 routes.get("/points/",new ReadPointController().handle);
-
-//! error em Update
-// routes.patch("/points/:id" ,new UpdatePointController().handle)
+routes.patch("/points/:id" ,new UpdatePointController().handle)
 
 
 export { routes};

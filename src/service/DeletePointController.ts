@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { DeletePointService } from "../../service/DeletePointService";
+import { DeletePointService } from "../service/DeletePointService";
 
 export class DeletePointController {
   async handle(req: Request, res: Response) {

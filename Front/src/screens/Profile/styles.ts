@@ -34,27 +34,28 @@ export const styles = StyleSheet.create({
        color: 'rgba(255, 255, 255, 1)'
       },
       Image: {
-        width: 30,
-        height: 30,
+        width: 70,
+        height: 70,
     },
 
       ima: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: 60,
-        height: 60,
-        borderRadius: 100,
-        marginBottom: 10,
-        marginTop: 10,
-        backgroundColor: 'rgba(122, 195, 64, 1)',
+        // alignItems: 'center',
+        // justifyContent: 'center',
+        // width: 60,
+        // height: 60,
+        // borderRadius: 100,
+        // marginBottom: 10,
+        // marginTop: 10,
+        // backgroundColor: 'rgba(122, 195, 64, 1)',
       },
       Form:{
         flex: 3,
         backgroundColor: "rgba(217, 217, 217, 0.29)",
         borderTopLeftRadius: 45,
         borderTopRightRadius: 45,
-        paddingStart: '35%',
-        paddingEnd: '35%',
+        // erra esse krl aqui pqp
+        // paddingStart: '35%',
+        // paddingEnd: '35%',
         
     },
     title:{
@@ -65,7 +66,11 @@ export const styles = StyleSheet.create({
       justifyContent: 'center',
       paddingHorizontal: 5,
       paddingTop: 20,
-      borderBottomWidth: 1
+      borderBottomWidth: 1,
+      marginLeft: '35%',
+      marginRight: '35%', 
+      marginBottom:5
+    
   },
   button:{
     flex: 1,
@@ -83,6 +88,8 @@ export const styles = StyleSheet.create({
         width: '200%',
         alignItems: 'center',
         alignSelf: 'center',
+        marginRight:'30%',
+        marginLeft:'30%',
        
 
   },

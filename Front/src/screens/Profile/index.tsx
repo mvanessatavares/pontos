@@ -35,7 +35,7 @@ export const Profile = () => {
     <View style ={styles.container}>
       <ImageBackground source={require('../../../assets/fundo.png')}  style={styles.image}>
 
-    <View style={styles.teste}>
+    <View style={styles.userBox}>
     <View style={styles.ima} >
 
        
@@ -43,8 +43,8 @@ export const Profile = () => {
                     style={styles.Image}  />
       </View>
      
-      <Text style={styles.nome}>{dadosUsuario.nome}</Text>
-      <Text style={styles.nome}>{dadosUsuario.email}</Text>
+      <Text style={styles.textUser}>{dadosUsuario.nome}</Text>
+      <Text style={styles.textUser}>{dadosUsuario.email}</Text>
     </View>
     <Animatable.View delay={600} animation = "fadeInUp" style = {styles.Form}>
   
@@ -52,8 +52,7 @@ export const Profile = () => {
     
     
 
-    <FlatList
-       
+    <FlatList        
         data={pointList}
         keyExtractor={(item) => item.name}
         renderItem={renderItem}
@@ -61,10 +60,10 @@ export const Profile = () => {
  
     
    
-    <View style={styles.button}>
+    <View>
     <TouchableOpacity
       style={styles.b}>
-        <Image source={require('../../../assets/iconsPerfil/icon_add_point.png')}/>
+        <Image style={styles.bIcon} source={require('../../../assets/iconsPerfil/icon_add_point.png')}/>
       <Text style={{ color: '#fff' }}>Adicionar pontos de coleta</Text>
     </TouchableOpacity>
     </View>

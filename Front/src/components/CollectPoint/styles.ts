@@ -17,11 +17,14 @@ export const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     borderRadius: 10,
+    marginTop:5,
+    marginBottom:5,
+
 
     // somente temporariamente
 
-    marginLeft:15,
-    marginTop: 55,
+    // marginLeft:15,
+    // marginTop: 55,
     
   },
 

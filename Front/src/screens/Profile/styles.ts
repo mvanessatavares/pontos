@@ -14,28 +14,30 @@ export const styles = StyleSheet.create({
      width: undefined,
      height: undefined,
     },
-    teste: {
+    userBox: {
       alignItems: 'center',
-      paddingTop: 50,
-      flex: 1,
+      paddingTop: 35,
+      marginBottom:20
+      // flex: 1,
     },
 
       imagee: {
-        borderRadius: 100,
-        borderWidth: 40,
-        width: '10%',
-        height: '10%',
+        // borderRadius: 100,
+        // borderWidth: 40,
+        // width: '10%',
+        // height: '10%',
   
       },
-      nome: {
+      textUser: {
         fontSize: 14,
         fontWeight: '400',
-        marginTop: 16,
+        marginTop: 5,
        color: 'rgba(255, 255, 255, 1)'
       },
       Image: {
         width: 70,
         height: 70,
+        marginBottom:10,
     },
 
       ima: {
@@ -53,9 +55,8 @@ export const styles = StyleSheet.create({
         backgroundColor: "rgba(217, 217, 217, 0.29)",
         borderTopLeftRadius: 45,
         borderTopRightRadius: 45,
-        // erra esse krl aqui pqp
-        // paddingStart: '35%',
-        // paddingEnd: '35%',
+        paddingBottom:10,
+        alignItems: 'center'
         
     },
     title:{
@@ -67,32 +68,29 @@ export const styles = StyleSheet.create({
       paddingHorizontal: 5,
       paddingTop: 20,
       borderBottomWidth: 1,
-      marginLeft: '35%',
-      marginRight: '35%', 
+      
       marginBottom:5
     
   },
-  button:{
-    flex: 1,
-    alignItems: 'flex-start',
-    justifyContent: 'flex-end',
-    marginBottom: 30,
-    
-  },
-
+ 
   b:{
-    position: 'absolute',
+    
         backgroundColor: 'rgba(132, 196, 65, 1)',
-        padding: 10,
+        paddingTop: 2,
         borderRadius: 10,
-        width: '200%',
+        width: 190,
+        height:50,
         alignItems: 'center',
         alignSelf: 'center',
-        marginRight:'30%',
-        marginLeft:'30%',
+        marginTop:5,
        
 
   },
+
+  bIcon: {
+    width:25,
+    height:25,
+  }
 
   
       

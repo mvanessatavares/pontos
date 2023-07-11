@@ -64,7 +64,7 @@ export const Profile = () => {
     <View style={styles.button}>
     <TouchableOpacity
       style={styles.b}>
-        <Image source={require('../../../assets/iconsPerfil/icon_add_point.png')}/>
+        <Image style={styles.bIcon} source={require('../../../assets/iconsPerfil/icon_add_point.png')}/>
       <Text style={{ color: '#fff' }}>Adicionar pontos de coleta</Text>
     </TouchableOpacity>
     </View>

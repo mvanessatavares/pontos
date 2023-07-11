@@ -56,6 +56,8 @@ export const styles = StyleSheet.create({
         // erra esse krl aqui pqp
         // paddingStart: '35%',
         // paddingEnd: '35%',
+        paddingBottom:10,
+        alignItems: 'center'
         
     },
     title:{
@@ -67,32 +69,37 @@ export const styles = StyleSheet.create({
       paddingHorizontal: 5,
       paddingTop: 20,
       borderBottomWidth: 1,
-      marginLeft: '35%',
-      marginRight: '35%', 
+      // marginLeft: '35%',
+      // marginRight: '35%', 
       marginBottom:5
     
   },
   button:{
-    flex: 1,
-    alignItems: 'flex-start',
-    justifyContent: 'flex-end',
-    marginBottom: 30,
+    // flex: 1,
+    // alignItems: 'flex-start',
+    // justifyContent: 'flex-end',
+    // marginBottom: 30,
     
   },
 
   b:{
-    position: 'absolute',
+    
         backgroundColor: 'rgba(132, 196, 65, 1)',
-        padding: 10,
+        paddingTop: 2,
         borderRadius: 10,
-        width: '200%',
+        width: 190,
+        height:50,
         alignItems: 'center',
         alignSelf: 'center',
-        marginRight:'30%',
-        marginLeft:'30%',
+        marginTop:5,
        
 
   },
+
+  bIcon: {
+    width:25,
+    height:25,
+  }
 
   
       

@@ -19,7 +19,7 @@ import { Point, pointList } from '../../../data/pointList';
 
 const dadosUsuario = {
   img: "img",
-  nome:"João Pedro",
+  nome:"João",
   email: "joaopedro@email.com"
 }
 
